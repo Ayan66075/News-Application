@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+
+    <style>
+
+        body {
+
+            font-family: Arial, sans-serif;
+
+            background-color: #000; /* Black background */
+
+            color: #fff; /* White text color */
+
+            margin: 0;
+
+            padding: 20px;
+
+        }
+
+
+        h1 {
+
+            color: #fff; /* White color for the heading */
+
+        }
+
+
+        #inp {
+
+            padding: 10px;
+
+            width: 300px;
+
+            border: 1px solid #ccc;
+
+            border-radius: 5px;
+
+            margin-right: 10px;
+
+            background-color: #333; /* Dark background for input */
+
+            color: #fff; /* White text color for input */
+
+        }
+
+
+        button {
+
+            padding: 10px 15px;
+
+            background-color: #007BFF; /* Blue background for button */
+
+            color: white;
+
+            border: none;
+
+            border-radius: 5px;
+
+            cursor: pointer;
+
+            transition: background-color 0.3s;
+
+        }
+
+
+        button:hover {
+
+            background-color: #0056b3; /* Darker blue on hover */
+
+        }
+
+
+        #show {
+
+            display: flex;
+
+            flex-wrap: wrap;
+
+            justify-content: space-around;
+
+            margin-top: 20px;
+
+        }
+
+
+        .abc {
+
+            border: 3px solid white; /* White border for news items */
+
+            width: 25%;
+
+            padding: 10px;
+
+            margin: 10px; /* Add some margin between items */
+
+            background-color: #444; /* Dark background for news items */
+
+            border-radius: 5px; /* Rounded corners */
+
+        }
+
+
+        /* Responsive Styles */
+
+        @media (max-width: 1200px) {
+
+            .abc {
+
+                width: 30%; /* Adjust width for medium screens */
+
+            }
+
+        }
+
+
+        @media (max-width: 992px) {
+
+            .abc {
+
+                width: 45%; /* Adjust width for smaller screens */
+
+            }
+
+        }
+
+
+        @media (max-width: 768px) {
+
+            .abc {
+
+                width: 100%; /* Full width for mobile screens */
+
+            }
+
+
+            #inp {
+
+                width: 80%; /* Adjust input width for mobile */
+
+                margin-bottom: 10px; /* Add margin below input */
+
+            }
+
+
+            button {
+
+                width: 100%; /* Full width for button on mobile */
+
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <div>
+
+        <center>
+
+            <h1>News Application</h1>
+
+            <input type="text" name="" id="inp" placeholder="Search for news...">
+
+            <button onclick="searchNews()">Search</button>
+
+            <br><br>
+
+        </center>
+
+        <div id="show">
+
+
+        </div>
+
+    </div>
+
+
+    <script src="app.js"></script>
+
+</body>
+
+
+</html>
